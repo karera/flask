@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block title %}
+    my index
+{% endblock %}
+
+{% block content %}
+
+{#<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda atque cum dolorem earum esse et ex facilis, illum iste, libero nesciunt, perferendis quas quos sequi soluta sunt! Dolor, fugit.</p>#}
+<div id="chart">
+   <embed type="image/svg+xml" src= {{ pie_data|safe }} />
+</div>
+    <div id="chart">
+   <embed type="image/svg+xml" src= {{ line_data|safe }} />
+</div>
+{% endblock %}
+
